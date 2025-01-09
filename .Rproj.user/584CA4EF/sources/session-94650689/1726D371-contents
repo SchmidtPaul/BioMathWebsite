@@ -1,0 +1,294 @@
+---
+title: Services
+---
+
+Please select a service to read more below.
+
+<div class="services-container">
+<div class="services-grid-top">
+<button class="service-card" onclick="showPanel('panel_s1')">Consulting & Project Support</button>
+<button class="service-card" onclick="showPanel('panel_s2')">Data Research & Compilation</button>
+<button class="service-card" onclick="showPanel('panel_s3')">Surveillance & Monitoring</button>
+<button class="service-card" onclick="showPanel('panel_s4')">Proof of Efficacy, Risk Assessment & Product Safety</button>
+</div>
+
+<div class="services-grid-bottom">
+<button class="service-card" onclick="showPanel('panel_s5')">Animal Studies & Agricultural Field Trials</button>
+<button class="service-card" onclick="showPanel('panel_s6')">Contract Research & Clinical Trials</button>
+<button class="service-card" onclick="showPanel('panel_s7')">Kurs "Datenanalyse mit Python"</button>
+</div>
+
+<!-- Consulting & Project Support -->
+<div id="panel_s1" class="content-panel">
+
+## Consulting & Project Support
+
+Each research project - from simple experiments to complex studies - requires structural planning and proper statistical analysis.
+
+### We accompany your project...
+
+Before starting a project, we help you map the key concepts underpinning a research area and identify the main sources and types of evidence available.
+
+Working closely with you, we analyze your problem, formulate the statistical questions, and provide appropriate statistical methods and tools to achieve the desired result.
+
+We will statistically support your project from the initial idea through to the interpretation and presentation of the results - whether in a study report or scientific journal.
+
+### ... in every phase:
+
+- formulation of the statistical question
+- specification of power and effect size
+- choice of the statistical model
+- optimal design of experiment or survey
+- data collection and management
+- performing an experiment or survey
+- statistical analysis and graphic presentation
+- interpretation of results
+
+</div>
+
+<!-- Data Research & Compilation -->
+<div id="panel_s2" class="content-panel">
+## Data Research & Compilation
+
+Worldwide data provides the foundation on which technical, scientific, and economic knowledge is built.
+
+### We formulate worldwide inquiries...
+
+We perform Internet searches for reports, patents, publications, and data.
+
+We identify persons, authorities, players, stakeholders, organizations, and associations. We directly contact responsible people. We search in multiple languages (English, German, French, Spanish, Portuguese, Russian, Chinese, and more) taking advantage of available data resources.
+
+
+### ... to collect research, market, regulatory, monitoring or other data:
+
+- search protocol
+- search strategy and areas
+- data collection and compilation
+- data management
+- descriptive and narrative data analysis
+- contact lists
+
+</div>
+
+<!-- Surveillance & Monitoring -->
+<div id="panel_s3" class="content-panel">
+## Surveillance & Monitoring
+
+Life science products are observed continuously (post-market), or specific information is surveyed by collecting data on the magnitude, patterns, determinants, and consequences of their use and exposure.
+
+### We develop and apply standard tools...
+
+#### for designing:
+
+- study plan
+- monitoring/surveillance instruments
+- sampling frame, sampling method, sample size
+
+#### for analyzing:
+
+- data validation
+- longitudinal aspects
+- statistical analysis
+- study report
+
+### ... to perform every phase of your monitoring or surveillance project:
+
+- study design and study analysis plan
+- design and phrasing of questions
+- interviewer training
+- survey, analysis, and evaluation of monitoring/surveillance data
+- bias identification and handling
+- integration of existing networks
+
+</div>
+
+<!-- Proof of Efficacy, Risk Assessment & Product Safety -->
+<div id="panel_s4" class="content-panel">
+## Proof of Efficacy, Risk Assessment & Product Safety
+
+Life science products and research results require proof of efficacy and the assessment of possible risks to human and animal health, or to the environment.
+
+### We assist you in important aspects of efficacy and safety assessement...
+
+We statistically design and analyze your studies.
+
+We provide input for study plans, study reports, regulatory submission materials, abstracts, and manuscripts.
+
+We maintain your data and provide appropriate tools for end-user use.
+
+We perform comprehensive reviews of relevant literature and extract the best available evidence.
+
+### ...of your product or research object:
+
+- food
+- feed
+- pharmaceuticals
+- plants
+- animals
+- enzymes
+- pesticides
+- additives
+- chemicals
+- allergens
+- water
+- air
+- soil
+- genetically modified organisms
+
+</div>
+
+<!-- Animal Studies & Agricultural Field Trials -->
+<div id="panel_s5" class="content-panel">
+## Animal Studies & Agricultural Field Trials
+
+Experimental research in the life sciences seeks to develop fundamental knowledge or to assess the influence of biotic or abiotic variables on living organisms.
+
+### We assist you in designing and analyzing your experiment ...
+
+- applying the 3R framework (Replace, Refine, Reduce)
+- choosing the right number of animals/plants
+- experimental design and randomization - groups and treatment allocation
+- treatment protocols
+- spatiotemporal analysis
+
+### ... with our broad practical experience:
+
+- guideline application
+- statistical significance and biological relevance
+- completely randomized, block, or factorial designs
+- plot size and number
+- treatment comparison
+- best variety or species selection
+
+</div>
+
+<!-- Contract Research & Clinical Trials -->
+<div id="panel_s6" class="content-panel">
+## Contract Research & Clinical Trials
+
+Statistics plays a crucial role in clinical trials and is involved in every step of clinical research.
+
+### We closely cooperate with clinicians in every step of the research...
+
+- trial design
+- protocol development
+- data management and monitoring
+- data analysis
+- clinical trial reporting
+
+### ... and offer services from single tasks to the realization of a whole project:
+
+Provide input to or lead the development of:
+
+- clinical study plans
+- protocols
+- Case Report Forms (CRF)
+- clinical study reports
+- regulatory submission materials
+- abstracts
+- manuscripts
+
+We represent Biostatistics in meetings with cross-functional project teams ensuring adherence to:
+
+- FDA/ICH guidelines
+- Good Clinical Practices
+- and regulatory requirements.
+
+</div>
+
+<!-- Kurs "Datenanalyse mit Python" -->
+<div id="panel_s7" class="content-panel">
+## Kurs "Datenanalyse mit Python"
+
+Lernen Sie die Grundlagen der Datenanalyse mit Python in einem flexiblen, selbstständigen E-Learning-Kurs – ohne Vorkenntnisse in Programmierung oder Statistik.
+
+### Datenanalyse mit Python - Selbstständiger E-Learning-Kurs für Anfänger
+
+Es sind keinerlei Vorkenntnisse in Programmierung, Datenverarbeitung oder Statistik nötig – es braucht lediglich einen eigenen PC (Windows, Mac oder Linux). Ziel ist es, die Grundlagen zu vermitteln, um als Data Analyst zu arbeiten. Man lernt den gesamten Datenverarbeitungsprozess zu beherrschen - vom Import über die Bereinigung bis hin zur Analyse und Visualisierung. So können datenbasierte Entscheidungen in verschiedenen beruflichen Kontexten getroffen werden.
+
+**Start:** Flexibel, Beginn jederzeit
+
+**Dauer:** 4 Monate Zugang zum Kursmaterial
+
+**Umfang:** Etwa 100 Stunden Lernzeit
+
+**Empfohlenes Lerntempo:** Ca. 6 Stunden pro Woche
+
+**Kurssprache:** Deutsch
+
+#### Inhalte
+
+Es sei vorweg betont, dass bzgl. des Funktionsumfangs von Python die Datenanalyse nur einen Teil darstellt und auf eben diesem liegt hier der Fokus:
+
+- Python-Installation und Einrichtung der Arbeitsumgebung
+- Python-Grundlagen: Datentypen, Variablen, Operatoren, Kontrollstrukturen, Datenstrukturen (Listen, Tuples, Sets, Dictionaries), Funktionen und Module
+- Numpy: Arrays erstellen und manipulieren, mathematische Operationen, Indizierung, Slicing
+- Pandas: Series und DataFrames, Datenimport/-export, Datenmanipulation (Selektion, Filterung, Sortierung), Datentypen, grundlegende Analysefunktionen, fortgeschrittene Operationen (pivot, melt, merge, join)
+- Datenvisualisierung mit Matplotlib und Seaborn: Scatter-Plots, Box-Plots, Bar-Plots, weitere Diagrammtypen und Erstellung von Dashboards
+- Deskriptive Statistik: Lage- und Streuungsmaße, Quantile
+- Praktische Aspekte: Jupyter Notebooks/Lab, Datenbereinigung und -vorverarbeitung, Umgang mit fehlenden Werten, Arbeit mit verschiedenen frei verfügbaren Datensätzen aus der Praxis
+- Best Practice Empfehlungen und Tipps für das generelle Arbeiten als Data Analyst
+
+Eine PDF mit dem Screenshot eines Beispielkapitels kann hier heruntergeladen werden: [Download](img/Beispielkapitel.pdf)
+
+#### Formate & Preise
+
+**Grundversion:**
+
+- Euro 49,90 (inkl. 19% MwSt.)
+- Vollständiger Zugang zum passwortgeschützten Online-Kursmaterial (>40 Kapitel)
+- Integrierte, automatisch ausgewertete Übungen zur Selbstkontrolle
+- Hilfestellung bei eventuellen technischen Problemen
+
+**Plus-Version:**
+
+- Euro 179,90 (inkl. 19% MwSt.)
+- Vollständiger Zugang zum passwortgeschützten Online-Kursmaterial (>40 Kapitel)
+- Integrierte, automatisch ausgewertete Übungen zur Selbstkontrolle
+- Hilfestellung bei eventuellen technischen Problemen
+- Kick-off Meeting via Zoom
+- Drei Leistungskontrollen zur Überprüfung des Lernfortschritts inkl. Feedback durch Kursautoren
+- Zertifikat bei erfolgreicher Absolvierung
+
+#### Feedback von ehemaligen Teilnehmenden
+- „Unabhängig vom Ergebnis will ich mich schonmal für den echt guten Kurs bedanken! Ich habe schonmal einen Udemy Python Kurs mit einem Anteil Data-Science durchgezogen und kann sagen, dass ich euren deutlich besser fand. Bei jedem neuen Thema ging es vom einfachen ins schwierige und die Übungsaufgaben waren vom Umfang und Schwierigkeitsgrad her meiner Meinung nach sehr angemessen. Auch das Schema mit den Prüfungen fand ich gut, um in der Lernmotivation zu bleiben. Die verlinkten YouTube Videos fand ich auch echt erfrischend, weil es irgendwann echt anstrengend wird, wenn man alles immer lesen muss. Auch die verlinkten Websites mit den Dokumentationen und allgemein die Website mit den "Vorlesungen" zum Mitmachen fand ich echt super. Abgesehen davon kam bei Fragen auch immer sehr schnell eine zufriedenstellende Antwort. Etwas zu meckern habe ich leider nicht, aber das werden ja vielleicht andere Teilnehmer übernehmen :)“
+- „Ich möchte mich nochmals herzlichst bei dir und deinem Team bedanken. Die Aufgaben haben mir wirklich viel Spaß gemacht, auch wenn sie mich manchmal fast zu Verzweiflung gebracht haben ;) Umso schöner war es wenn man durch harte Arbeit und langem Suchen und testen das gewünschte Ergebnis bekommen hat. Ich habe durch den Kurs sehr viel lernen können und freue mich schon auf weitere Projekte, wo ich das Gelernte umsetzen kann.“
+- „Nochmal großes Lob an alle Beteiligten des Lehrgangs. Gutes Material, und gute Aufgaben. Es war anspruchsvoll, aber nicht überfordernd.“
+- „Vielen Dank für den Kurs, sehr modern und gut aufbereitet. Die Übungen rundeten die Kapitel gut ab und das Abschlussprojekt war eine schöne Problemstellung.“
+- „Die Maßnahme hat mir sehr viel Spaß gemacht und ich habe sie als sehr lehrreichen Einstieg in die Welt der Datenanalyse empfunden. Generell fiel es mir leicht, mit den angebotenen Materialien dem Stoff folgen zu können. Die Stoffdichte und der Fortschritt waren absolut angemessen, sodass eine Beschäftigung mit dem Kurs auch neben einer Vollzeitbeschäftigung weitestgehend problemlos möglich war.“
+- „Ich möchte dir für deine Zeit danken. Die Art und Weise wie du die Inhalte auf der Website aufbereitet und erklärt hast sind sehr umfassend und verständlich. Das hat mir richtig gut gefallen.“
+- „Meine frühere Begeisterung für das Programmieren wurde wieder erweckt.“
+- „Mir hat der Kurs sehr gut gefallen, vor allem das eigenverantwortliche und flexible Lernen war perfekt. Du hast den Kurs überragend dadurch ergänzt, dass du jederzeit auch für Fragen erreichbar warst und uns mit Rat und Tat zur Seite standest. Vielen Dank dafür! Macht weiter so!“
+
+</div>
+</div>
+
+<script>
+function showPanel(panelId) {
+  // Hide all panels
+  document.querySelectorAll('.content-panel').forEach(panel => {
+    panel.classList.remove('active');
+  });
+  
+  // Remove active class from all buttons
+  document.querySelectorAll('.service-card').forEach(button => {
+    button.classList.remove('active');
+  });
+  
+  // Show selected panel
+  document.getElementById(panelId).classList.add('active');
+  
+  // Add active class to clicked button
+  event.currentTarget.classList.add('active');
+}
+
+// Initialize with first panel and button active
+showPanel('panel_s1');
+document.querySelector('.service-card').classList.add('active');
+
+// Keep the DOMContentLoaded event to ensure initialization if script loads late
+document.addEventListener('DOMContentLoaded', function() {
+  showPanel('panel_s1');
+  document.querySelector('.service-card').classList.add('active');
+});
+</script>

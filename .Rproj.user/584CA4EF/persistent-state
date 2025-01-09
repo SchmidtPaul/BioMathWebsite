@@ -1,0 +1,8 @@
+build-last-errors="[]"
+build-last-errors-base-dir=""
+build-last-outputs="[]"
+compile_pdf_state="{\"tab_visible\":false,\"running\":false,\"target_file\":\"\",\"output\":\"\",\"errors\":[]}"
+files.monitored-path=""
+find-in-files-state="{\"handle\":\"1nwrm7gvk0ds0zyr\",\"input\":\"logo\",\"path\":\"C:/Users/PSchmidt/Desktop/BioMathWebsite\",\"regex\":false,\"ignoreCase\":true,\"results\":{\"file\":[\"C:/Users/PSchmidt/Desktop/BioMathWebsite/_extensions/quarto-ext/fontawesome/assets/css/all.css\",\"C:/Users/PSchmidt/Desktop/BioMathWebsite/_extensions/quarto-ext/fontawesome/assets/css/all.min.css\",\"C:/Users/PSchmidt/Desktop/BioMathWebsite/_quarto.yml\"],\"line\":[6943,9,17],\"lineValue\":[\".fa-font-awesome-logo-full:before {\",\"...-flag:before,.fa-font-awesome-logo-full:before,.fa-font-awesome:before{content:\\\"\\\\f2b4\\\"}.fa-gratipay:before{content:\\\"\\\\f184\\\"}.fa-apple:before{content:\\\"\\\\f179\\\"}.fa-hive:before{content:\\\"\\\\e07f\\\"}.fa-gitkraken:before{content:\\\"\\\\f3a6\\\"}.fa-keybase:before{content:\\\"\\\\f4f5\\\"}.fa-apple-pay:before{content:\\\"\\\\f415\\\"}...\",\"logo: \\\"BioMath_logo_name_weiss_1500x399.png\\\"\"],\"matchOn\":[[17],[33],[0,15]],\"matchOff\":[[21],[37],[4,19]],\"replaceMatchOn\":[[],[],[]],\"replaceMatchOff\":[[],[],[]]},\"running\":false,\"replace\":false,\"preview\":false,\"gitFlag\":false,\"replacePattern\":\"\"}"
+imageDirtyState="0"
+saveActionState="0"

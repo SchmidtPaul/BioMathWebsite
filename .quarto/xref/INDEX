@@ -1,0 +1,32 @@
+{
+  "index.qmd": {
+    "index.html": "a9f46ea5"
+  },
+  "blog/first-post/index.qmd": {
+    "index.html": "6d9c1b44"
+  },
+  "blog/second-post/index.qmd": {
+    "index.html": "a887ffc4"
+  },
+  "blog/third-post/index.ipynb": {
+    "index.html": "0f6d612c"
+  },
+  "projects/index.qmd": {
+    "index.html": "5cff6e56"
+  },
+  "legal_notice.qmd": {
+    "legal_notice.html": "7ece3813"
+  },
+  "privacy_policy.qmd": {
+    "privacy_policy.html": "c92189cb"
+  },
+  "references.qmd": {
+    "references.html": "babcaff2"
+  },
+  "services.qmd": {
+    "services.html": "55c8fabf"
+  },
+  "methods.qmd": {
+    "methods.html": "6b0a250e"
+  }
+}
