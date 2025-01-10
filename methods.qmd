@@ -1,8 +1,8 @@
 ---
 title: Methods
-format:
-  html:
-    include-before-body: _before-body_bars_from_bottomright.html
+# format:
+#   html:
+#     include-before-body: _before-body_bars_from_bottomright.html
 ---
 
 Please select a method to read more below.
@@ -184,3 +184,181 @@ function showPanel(panelId) {
 showPanel('panel_m1');
 document.querySelector('.service-link').classList.add('active');
 </script>
+
+
+
+
+<style>
+.floating-background {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: -1;
+overflow: hidden;
+}
+
+.floating-logo {
+position: absolute;
+width: 80px;
+height: 80px;
+opacity: 0.3;
+filter: grayscale(100%);
+}
+
+.floating-logo img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+/* Individual logo animations */
+.float-1 {
+top: 15%;
+left: 10%;
+animation: float1 20s ease-in-out infinite;
+}
+
+.float-2 {
+top: 65%;
+left: 5%;
+animation: float2 25s ease-in-out infinite;
+}
+
+.float-3 {
+top: 35%;
+right: 8%;
+animation: float3 22s ease-in-out infinite;
+}
+
+.float-4 {
+top: 75%;
+right: 12%;
+animation: float4 28s ease-in-out infinite;
+}
+
+.float-5 {
+top: 25%;
+left: 85%;
+animation: float5 24s ease-in-out infinite;
+}
+
+.float-6 {
+top: 85%;
+left: 80%;
+animation: float6 26s ease-in-out infinite;
+}
+
+.float-7 {
+top: 45%;
+right: 85%;
+animation: float7 23s ease-in-out infinite;
+}
+
+.float-8 {
+top: 45%;
+left: 55%;
+animation: float8 27s ease-in-out infinite;
+}
+
+.float-9 {
+top: 25%;
+right: 35%;
+animation: float9 21s ease-in-out infinite;
+}
+
+@keyframes float1 {
+0%, 100% { transform: translate(0, 0); }
+25% { transform: translate(30px, 40px); }
+50% { transform: translate(-20px, 20px); }
+75% { transform: translate(20px, -30px); }
+}
+
+@keyframes float2 {
+0%, 100% { transform: translate(0, 0); }
+25% { transform: translate(-40px, 30px); }
+50% { transform: translate(30px, -40px); }
+75% { transform: translate(-20px, 20px); }
+}
+
+@keyframes float3 {
+0%, 100% { transform: translate(0, 0); }
+25% { transform: translate(-30px, -40px); }
+50% { transform: translate(40px, 20px); }
+75% { transform: translate(-20px, 30px); }
+}
+
+@keyframes float4 {
+0%, 100% { transform: translate(0, 0); }
+25% { transform: translate(40px, -30px); }
+50% { transform: translate(-30px, 40px); }
+75% { transform: translate(20px, -20px); }
+}
+
+@keyframes float5 {
+0%, 100% { transform: translate(0, 0); }
+25% { transform: translate(-40px, 30px); }
+50% { transform: translate(30px, -20px); }
+75% { transform: translate(-20px, 40px); }
+}
+
+@keyframes float6 {
+0%, 100% { transform: translate(0, 0); }
+25% { transform: translate(30px, -40px); }
+50% { transform: translate(-40px, 20px); }
+75% { transform: translate(20px, 30px); }
+}
+
+@keyframes float7 {
+0%, 100% { transform: translate(0, 0); }
+25% { transform: translate(-30px, 30px); }
+50% { transform: translate(40px, -30px); }
+75% { transform: translate(-20px, 20px); }
+}
+
+@keyframes float8 {
+0%, 100% { transform: translate(0, 0); }
+25% { transform: translate(35px, -35px); }
+50% { transform: translate(-25px, 25px); }
+75% { transform: translate(30px, 35px); }
+}
+
+@keyframes float9 {
+0%, 100% { transform: translate(0, 0); }
+25% { transform: translate(-35px, -25px); }
+50% { transform: translate(25px, 35px); }
+75% { transform: translate(-30px, -35px); }
+}
+</style>
+
+<div class="floating-background">
+<div class="floating-logo float-1">
+<img src="img/methodlogos/jupyter.png" alt="Jupyter Notebooks">
+</div>
+<div class="floating-logo float-2">
+<img src="img/methodlogos/microsoftoffice.png" alt="Microsoft Office">
+</div>
+<div class="floating-logo float-3">
+<img src="img/methodlogos/python.png" alt="Python">
+</div>
+<div class="floating-logo float-4">
+<img src="img/methodlogos/quarto.png" alt="Quarto">
+</div>
+<div class="floating-logo float-5">
+<img src="img/methodlogos/github.png" alt="GitHub">
+</div>
+<div class="floating-logo float-6">
+<img src="img/methodlogos/sas.png" alt="SAS">
+</div>
+<div class="floating-logo float-7">
+<img src="img/methodlogos/spss.png" alt="SPSS">
+</div>
+<div class="floating-logo float-8">
+<img src="img/methodlogos/Rstudio.png" alt="RStudio">
+</div>
+<div class="floating-logo float-9">
+<img src="img/methodlogos/citavi.png" alt="Citavi 6">
+</div>
+</div>
