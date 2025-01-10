@@ -185,13 +185,15 @@ footer > div {
 .publication-gallery {
 max-width: 1000px;
 margin: 0 auto;
-padding: 0rem;
+padding: 0 0 30px;
 position: relative;
 }
+
 .publication-slider {
 display: flex;
 position: relative;
 }
+
 .publication-card {
 background: $white;
 border: 1px solid #e0e0e0;
@@ -203,27 +205,39 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 width: 700px;
 flex-shrink: 0;
 }
+
 .publication-carousel {
 position: relative;
 width: 100%;
 overflow: hidden;
 }
+
 .publication-carousel-inner {
 display: flex;
 transition: transform 0.3s ease-in-out;
 }
+
 .publication-content {
 display: flex;
 gap: 1rem;
+align-items: center;
 }
+
 .publication-image {
 flex: none;
-width: 160px;
-}
-.publication-placeholder {
-width: 100%;
+width: auto;
 height: 200px;
-background-color: #e0e0e0;
+display: flex-start;
+align-items: center;
+justify-content: center;
+}
+
+.publication-image img {
+max-width: 100%;
+max-height: 200px;
+width: auto;
+height: auto;
+object-fit: contain;
 border-radius: 0.5rem;
 }
 .publication-details {

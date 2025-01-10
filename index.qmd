@@ -67,14 +67,14 @@ Below is a selection of publications from our past research and consulting colla
 <div class="publication-card">
 <div class="publication-content">
 <div class="publication-image">
-<div class="publication-placeholder"></div>
+<img src="img/pubcovers/biozideinumwelt.png" alt="Publication cover">
 </div>
 <div class="publication-details">
-<h3 class="publication-title">Understanding Modern Web Architecture</h3>
-<p class="publication-info"><strong>Authors: </strong>Jane Smith, John Doe</p>
+<h3 class="publication-title">Erweiterung der Datenbank „Biozide in der Umwelt“</h3>
+<p class="publication-info"><strong>Authors: </strong>Kerstin Schmidt, Jörg Schmidtke, Paul Schmidt</p>
 <p class="publication-info"><strong>Year: </strong>2024</p>
-<p class="publication-info"><strong>Journal: </strong>Web Technology Review</p>
-<p class="publication-info"><strong>DOI: </strong><a href="https://doi.org/10.1234/wtr.2024.001">10.1234/wtr.2024.001</a></p>
+<p class="publication-info"><strong>Publisher: </strong>Umweltbundesamt</p>
+<p class="publication-info"><strong>URL: </strong><a href="https://www.umweltbundesamt.de/publikationen/erweiterung-der-datenbank-biozide-in-der-umwelt">www.umweltbundesamt.de/publikationen</a></p>
 </div>
 </div>
 </div>
