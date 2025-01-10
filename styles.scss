@@ -258,16 +258,35 @@ background: $bm-midgrey;
 
 .services-grid-top {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 150px); /* Fixed width of 150px */
   gap: 20px;
   justify-content: center;
   margin-bottom: 20px;
 }
 
+/* Grid columns based on screen width */
+@media (min-width: 768px) {
+  .services-grid-top {
+    grid-template-columns: repeat(4, 150px);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .services-grid-top {
+    grid-template-columns: repeat(2, 150px);
+  }
+}
+
+@media (max-width: 479px) {
+  .services-grid-top {
+    grid-template-columns: 150px;
+  }
+}
+
+/* Rest of your service-card styles stay the same */
 .service-card {
-  padding: 12px; /* Slightly reduced padding */
+  padding: 12px;
   height: 100px;
-  width: 150px; /* Fixed width */
+  width: 150px;
   outline: 0;
   border: 1px solid $bm-midgrey;
   cursor: pointer;
@@ -282,8 +301,8 @@ background: $bm-midgrey;
   touch-action: manipulation;
   transition: all 0.2s;
   color: $bm-midgrey;
-  font-size: 0.8rem; /* Smaller font size */
-  line-height: 1.1; /* Tighter line height */
+  font-size: 0.8rem;
+  line-height: 1.1;
 }
 
 .service-card:after {
