@@ -1,23 +1,22 @@
 ---
 title: Methods
+format:
+  html:
+    include-before-body: _before-body_bars_from_bottomright.html
 ---
 
 Please select a method to read more below.
 
 <div class="services-container">
-<div class="services-grid-bottom">
+<div class="services-grid-top">
 <button class="service-card" onclick="showPanel('panel_m1')">Statistical Analysis
 </button>
 <button class="service-card" onclick="showPanel('panel_m2')">Design of Experiments</button>
 <button class="service-card" onclick="showPanel('panel_m3')">Literature, Scoping & Systematic Reviews</button>
-</div>
-
-<br>
-
-<div class="services-grid-bottom">
 <button class="service-card" onclick="showPanel('panel_m4')">Data Management & Processing</button>
 <button class="service-card" onclick="showPanel('panel_m5')">Database & Software Development</button>
 <button class="service-card" onclick="showPanel('panel_m6')">Quality Management System</button>
+</div>
 </div>
 
 <!-- Statistical Analysis -->

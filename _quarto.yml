@@ -2,7 +2,11 @@
 # - https://github.com/schochastics/academicons
 # - https://github.com/quarto-ext/fontawesome
 
-# TODO: Jobs
+# TODO: 
+# - Jobs
+# - References
+# Bessere Buttons
+# Hintergründe als angedeutete Diagramme
 
 project:
   type: website
@@ -27,8 +31,7 @@ website:
       - text: References
         href: references.qmd
 
-    
-  
+
   page-footer:
     left: |
       BioMath GmbH<br>

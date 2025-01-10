@@ -1,6 +1,9 @@
 ---
 title: "BioMath"
 subtitle: "Applied statistics and informatics in life sciences."
+format:
+  html:
+    include-before-body: _before-body_index.html
 ---
 
 Welcome to BioMath - your professional consultancy in all questions of data management and statistics!

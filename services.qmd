@@ -1,5 +1,8 @@
 ---
 title: Services
+format:
+  html:
+    include-before-body: _before-body_bars_from_bottomleft.html
 ---
 
 Please select a service to read more below.
@@ -10,12 +13,10 @@ Please select a service to read more below.
 <button class="service-card" onclick="showPanel('panel_s2')">Data Research & Compilation</button>
 <button class="service-card" onclick="showPanel('panel_s3')">Surveillance & Monitoring</button>
 <button class="service-card" onclick="showPanel('panel_s4')">Proof of Efficacy, Risk Assessment & Product Safety</button>
-</div>
-
-<div class="services-grid-bottom">
 <button class="service-card" onclick="showPanel('panel_s5')">Animal Studies & Agricultural Field Trials</button>
 <button class="service-card" onclick="showPanel('panel_s6')">Contract Research & Clinical Trials</button>
 <button class="service-card" onclick="showPanel('panel_s7')">Kurs "Datenanalyse mit Python"</button>
+</div>
 </div>
 
 <!-- Consulting & Project Support -->

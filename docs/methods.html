@@ -116,6 +116,167 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
+<style>
+
+.bg-bars {
+
+  position: fixed;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  top: 0;
+
+  z-index: -1;
+
+  display: flex;
+
+  gap: 20px;
+
+  padding-right: 50px; /* Changed from padding-left to padding-right */
+
+  pointer-events: none;
+
+  transform: rotate(-30deg); /* Changed from 30deg to -30deg */
+
+  transform-origin: 100% 100%; /* Changed from 0 100% to 100% 100% */
+
+  right: -20%; /* Changed from left: -20% to right: -20% */
+
+  position: fixed;
+
+  align-items: flex-end;
+
+  opacity: 0;
+
+  animation: fadeIn 0.1s forwards;
+
+}
+
+
+
+/* Rest of the styles remain the same */
+
+.bar {
+
+  width: 100px;
+
+  background-color: #00923f;
+
+  opacity: 0;
+
+  transform-origin: bottom;
+
+  animation: growUpAndFade 2s ease-out forwards;
+
+  position: relative;
+
+}
+
+
+
+.bar:nth-child(1) { height: 220vh; }
+
+.bar:nth-child(2) { height: 140vh; animation-delay: 0.2s; }
+
+.bar:nth-child(3) { height: 150vh; animation-delay: 0.4s; }
+
+.bar:nth-child(4) { height: 110vh; animation-delay: 0.6s; }
+
+.bar:nth-child(5) { height: 120vh; animation-delay: 0.8s; }
+
+.bar:nth-child(6) { height: 160vh; animation-delay: 0.4s; }
+
+.bar:nth-child(7) { height: 140vh; animation-delay: 0.2s; }
+
+.bar:nth-child(8) { height: 120vh; animation-delay: 0.4s; }
+
+.bar:nth-child(9) { height: 140vh; animation-delay: 0.6s; }
+
+.bar:nth-child(10) { height: 80vh; animation-delay: 0.8s; }
+
+.bar:nth-child(11) { height: 120vh; animation-delay: 0.0s; }
+
+.bar:nth-child(12) { height: 100vh; animation-delay: 0.2s; }
+
+.bar:nth-child(13) { height: 120vh; animation-delay: 0.4s; }
+
+.bar:nth-child(14) { height: 100vh; animation-delay: 0.6s; }
+
+
+
+@keyframes fadeIn {
+
+  to {
+
+    opacity: 0.1;
+
+  }
+
+}
+
+
+
+@keyframes growUpAndFade {
+
+  0% {
+
+    transform: scaleY(0);
+
+    opacity: 0;
+
+  }
+
+  100% {
+
+    transform: scaleY(1);
+
+    opacity: 0.7;
+
+  }
+
+}
+
+
+
+</style>
+
+
+
+<div class="bg-bars">
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+  <div class="bar"></div>
+
+</div>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -138,7 +299,7 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Please select a method to read more below.</p>
 <div class="services-container">
-<div class="services-grid-bottom">
+<div class="services-grid-top">
 <button class="service-card" onclick="showPanel('panel_m1')">
 Statistical Analysis
 </button>
@@ -148,9 +309,6 @@ Design of Experiments
 <button class="service-card" onclick="showPanel('panel_m3')">
 Literature, Scoping &amp; Systematic Reviews
 </button>
-</div>
-<p><br></p>
-<div class="services-grid-bottom">
 <button class="service-card" onclick="showPanel('panel_m4')">
 Data Management &amp; Processing
 </button>
@@ -160,6 +318,7 @@ Database &amp; Software Development
 <button class="service-card" onclick="showPanel('panel_m6')">
 Quality Management System
 </button>
+</div>
 </div>
 <!-- Statistical Analysis -->
 <div id="panel_m1" class="content-panel">
@@ -303,7 +462,7 @@ Quality Management System
 </ul>
 </section>
 </div>
-</div>
+</main></div>
 <script>
 function showPanel(panelId) {
   // Hide all panels
@@ -336,7 +495,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-</main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -757,7 +916,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
+ <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
