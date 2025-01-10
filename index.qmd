@@ -146,3 +146,199 @@ function updateButtons() {
     if (nextButton) nextButton.style.opacity = window.currentSlide === window.items.length - 1 ? '0' : '1';
 }
 </script>
+
+<style>
+.logo-container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 5px 20px 20px 20px;
+background: #56595a;
+border-radius: 1rem;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+display: flex;
+align-items: center;
+gap: 20px;
+}
+.logo-wrapper {
+width: 75%;
+}
+.slider-title {
+color: white;
+margin: 0 0 15px 0;
+font-size: 16px;
+}
+.logo-slider {
+position: relative;
+width: 100%;
+height: 80px;
+overflow: hidden;
+mask-image: linear-gradient(to right, transparent, black 64px, black calc(100% - 64px), transparent 100%);
+-webkit-mask-image: linear-gradient(to right, transparent, black 64px, black calc(100% - 64px), transparent 100%);
+}
+.logo-track {
+display: flex;
+animation: scroll 25s linear infinite;
+height: 80px;
+align-items: center;
+width: fit-content;
+}
+.logo-track:hover {
+animation-play-state: paused;
+}
+.logo-slide {
+flex: 0 0 auto;
+margin: 0 20px;
+padding: 0;
+height: 80px;
+display: flex;
+align-items: flex-start;
+position: relative;
+}
+.logo-slide img {
+height: 80px;
+width: auto;
+object-fit: contain;
+filter: brightness(0) invert(1);
+cursor: pointer;
+}
+.alt-text-display {
+width: 25%;
+height: 80px;
+padding: 20px;
+color: white;
+font-size: 16px;
+background: rgba(0, 0, 0, 0.2);
+border-radius: 0.5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.placeholder-text {
+color: #999;
+font-style: italic;
+}
+@keyframes scroll {
+0% {
+transform: translateX(0);
+}
+100% {
+transform: translateX(-50%);
+}
+}
+</style>
+<div class="logo-container">
+<div class="logo-wrapper">
+<div class="slider-title" style="font-weight: bold; font-size: 30px; padding: 0px">Our clients</div>
+<div class="logo-slider">
+<div class="logo-track">
+<div class="logo-slide">
+<img src="img/clientlogos/angloamerican.png" alt="Anglo American">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/bast.png" alt="Bundesamt für Straßenwesen">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/bayeercropcience.png" alt="Bayer Crop Science">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/bundeswehr.png" alt="Bundeswehr">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/bzga.png" alt="Bundeszentrale für gesundheitliche Aufklärung">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/dds.png" alt="Deutsche Diabetes Stiftung">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/dge.png" alt="Deutsche Gesellschaft für Ernährung">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/efsa.png" alt="European Food Safety Association">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/euosha.png" alt="European Agency for Safety and Health at Work">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/fnr.png" alt="Fachagentur Nachwachsende Rohstoffe e.V.">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/llh.png" alt="Landesbetrieb Landwirtschaft Hessen">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/lwknrw.png" alt="Landwirtschaftskammer Nordrhein-Westfalen">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/syngenta.png" alt="Syngenta">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/whh.png" alt="Welthungerhilfe">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/wintersteiger.png" alt="Wintersteiger">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/angloamerican.png" alt="Anglo American">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/bast.png" alt="Bundesamt für Straßenwesen">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/bayeercropcience.png" alt="Bayer Crop Science">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/bundeswehr.png" alt="Bundeswehr">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/bzga.png" alt="Bundeszentrale für gesundheitliche Aufklärung">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/dds.png" alt="Deutsche Diabetes Stiftung">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/dge.png" alt="Deutsche Gesellschaft für Ernährung">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/efsa.png" alt="European Food Safety Association">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/euosha.png" alt="European Agency for Safety and Health at Work">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/fnr.png" alt="Fachagentur Nachwachsende Rohstoffe e.V.">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/llh.png" alt="Landesbetrieb Landwirtschaft Hessen">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/lwknrw.png" alt="Landwirtschaftskammer Nordrhein-Westfalen">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/syngenta.png" alt="Syngenta">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/whh.png" alt="Welthungerhilfe">
+</div>
+<div class="logo-slide">
+<img src="img/clientlogos/wintersteiger.png" alt="Wintersteiger">
+</div>
+</div>
+</div>
+</div>
+<div class="alt-text-display" id="altTextBox"><span class="placeholder-text">Hover over logo for details</span></div>
+</div>
+<script>
+const altTextBox = document.getElementById('altTextBox');
+const placeholderText = '<span class="placeholder-text">Hover over logo for details</span>';
+altTextBox.innerHTML = placeholderText;
+
+document.querySelectorAll('.logo-slide img').forEach(img => {
+img.addEventListener('mouseenter', function() {
+const altText = this.getAttribute('alt');
+altTextBox.textContent = altText;
+});
+img.addEventListener('mouseleave', function() {
+altTextBox.innerHTML = placeholderText;
+});
+});
+</script>

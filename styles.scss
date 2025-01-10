@@ -336,3 +336,82 @@ background: $bm-midgrey;
   margin-top: 0;
   padding-top: 20px;
 }
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7))} 
+}
+
+.logo-carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0;
+  width: 100%;
+  background: transparent;
+
+  // Gradient masks on the sides
+  &::before,
+  &::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+    top: 0;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+    transform: rotateZ(180deg);
+  }
+}
+
+// Animation keyframes for infinite loop
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.logo-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  // Double the content for seamless loop
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.logo-slide {
+  flex: 0 0 auto; // Prevent shrinking and growing
+  height: 54px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  
+  img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-slide {
+    height: 40px;
+    padding: 0 20px;
+  }
+  
+  .logo-carousel {
+    &::before,
+    &::after {
+      width: 64px;
+    }
+  }
+}
