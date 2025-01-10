@@ -253,7 +253,7 @@ background: $bm-midgrey;
 .services-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 10px 20px;
 }
 
 .services-list {
@@ -263,16 +263,10 @@ background: $bm-midgrey;
 }
 
 .services-list li {
-  margin-bottom: 0px;
-  
-  &::before {
-    content: "•";
-    color: $bm-midgrey;
-    display: inline-block;
-    width: 1em;
-    margin-left: 0;
-    margin-right: 0.5em;
-  }
+  margin-bottom: 12px; // Slightly more space between items for readability
+  padding-left: 1.2em; // Space for bullet point
+  text-indent: -1.2em; // Pull bullet point into padding
+
 }
 
 .service-link {
@@ -280,7 +274,9 @@ background: $bm-midgrey;
   color: $bm-midgrey;
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  font-size: 1.1rem;
+  display: inline;  // Changed from inline-block to allow better wrapping
+  line-height: 1.4; // Better line height for wrapped text
   
   &::after {
     content: "";
@@ -305,6 +301,17 @@ background: $bm-midgrey;
       width: 100%;
       left: 0;
     }
+  }
+}
+
+// Mobile optimization
+@media (max-width: 768px) {
+  .services-list li {
+    margin-bottom: 15px; // More space between items on mobile
+  }
+  
+  .service-link {
+    font-size: 1rem; // Slightly smaller font on mobile
   }
 }
 
