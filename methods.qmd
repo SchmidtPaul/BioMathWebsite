@@ -8,16 +8,17 @@ format:
 Please select a method to read more below.
 
 <div class="services-container">
-<div class="services-grid-top">
-<button class="service-card" onclick="showPanel('panel_m1')">Statistical Analysis
-</button>
-<button class="service-card" onclick="showPanel('panel_m2')">Design of Experiments</button>
-<button class="service-card" onclick="showPanel('panel_m3')">Literature, Scoping & Systematic Reviews</button>
-<button class="service-card" onclick="showPanel('panel_m4')">Data Management & Processing</button>
-<button class="service-card" onclick="showPanel('panel_m5')">Database & Software Development</button>
-<button class="service-card" onclick="showPanel('panel_m6')">Quality Management System</button>
+<ul class="services-list">
+<li><a class="service-link" onclick="showPanel('panel_m1')">Statistical Analysis</a></li>
+<li><a class="service-link" onclick="showPanel('panel_m2')">Design of Experiments</a></li>
+<li><a class="service-link" onclick="showPanel('panel_m3')">Literature, Scoping & Systematic Reviews</a></li>
+<li><a class="service-link" onclick="showPanel('panel_m4')">Data Management & Processing</a></li>
+<li><a class="service-link" onclick="showPanel('panel_m5')">Database & Software Development</a></li>
+<li><a class="service-link" onclick="showPanel('panel_m6')">Quality Management System</a></li>
+</ul>
 </div>
-</div>
+
+<!-- Rest der content-panels bleiben gleich -->
 
 <!-- Statistical Analysis -->
 <div id="panel_m1" class="content-panel">
@@ -167,25 +168,19 @@ function showPanel(panelId) {
     panel.classList.remove('active');
   });
   
-  // Remove active class from all buttons
-  document.querySelectorAll('.service-card').forEach(button => {
-    button.classList.remove('active');
+  // Remove active class from all links
+  document.querySelectorAll('.service-link').forEach(link => {
+    link.classList.remove('active');
   });
   
   // Show selected panel
   document.getElementById(panelId).classList.add('active');
   
-  // Add active class to clicked button
+  // Add active class to clicked link
   event.currentTarget.classList.add('active');
 }
 
-// Initialize with first panel and button active
+// Initialize with first panel and link active
 showPanel('panel_m1');
-document.querySelector('.service-card').classList.add('active');
-
-// Keep the DOMContentLoaded event to ensure initialization if script loads late
-document.addEventListener('DOMContentLoaded', function() {
-  showPanel('panel_m1');
-  document.querySelector('.service-card').classList.add('active');
-});
+document.querySelector('.service-link').classList.add('active');
 </script>

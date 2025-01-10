@@ -253,87 +253,59 @@ background: $bm-midgrey;
 .services-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0px 20px;
 }
 
-.services-grid-top {
-  display: grid;
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 20px;
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Grid columns based on screen width */
-@media (min-width: 768px) {
-  .services-grid-top {
-    grid-template-columns: repeat(4, 150px);
+.services-list li {
+  margin-bottom: 0px;
+  
+  &::before {
+    content: "•";
+    color: $bm-midgrey;
+    display: inline-block;
+    width: 1em;
+    margin-left: 0;
+    margin-right: 0.5em;
   }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
-  .services-grid-top {
-    grid-template-columns: repeat(2, 150px);
-  }
-}
-
-@media (max-width: 479px) {
-  .services-grid-top {
-    grid-template-columns: 150px;
-  }
-}
-
-/* Rest of your service-card styles stay the same */
-.service-card {
-  padding: 12px;
-  height: 100px;
-  width: 150px;
-  outline: 0;
-  border: 1px solid $bm-midgrey;
-  cursor: pointer;
+.service-link {
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  transition: all 0.2s;
   color: $bm-midgrey;
-  font-size: 0.8rem;
-  line-height: 1.1;
-}
-
-.service-card:after {
-  content: "";
-  background-color: $bm-lightgrey;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
-}
-
-.service-card:hover {
-  color: $bm-midgrey;
-}
-
-.service-card:hover:after {
-  top: 0px;
-  left: 0px;
-}
-
-.service-card.active {
-  color: $bm-green;
-}
-
-.service-card.active:after {
-  background-color: $bm-lightgrey;
-  top: 0px;
-  left: 0px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -1px;
+    left: 100%;
+    background-color: $bm-green;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  &.active {
+    color: $bm-green;
+    
+    &::after {
+      width: 100%;
+      left: 0;
+    }
+  }
 }
 
 .content-panel {

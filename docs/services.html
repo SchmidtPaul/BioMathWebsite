@@ -295,29 +295,29 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Please select a service to read more below.</p>
 <div class="services-container">
-<div class="services-grid-top">
-<button class="service-card" onclick="showPanel('panel_s1')">
-Consulting &amp; Project Support
-</button>
-<button class="service-card" onclick="showPanel('panel_s2')">
-Data Research &amp; Compilation
-</button>
-<button class="service-card" onclick="showPanel('panel_s3')">
-Surveillance &amp; Monitoring
-</button>
-<button class="service-card" onclick="showPanel('panel_s4')">
-Proof of Efficacy, Risk Assessment &amp; Product Safety
-</button>
-<button class="service-card" onclick="showPanel('panel_s5')">
-Animal Studies &amp; Agricultural Field Trials
-</button>
-<button class="service-card" onclick="showPanel('panel_s6')">
-Contract Research &amp; Clinical Trials
-</button>
-<button class="service-card" onclick="showPanel('panel_s7')">
-Kurs “Datenanalyse mit Python”
-</button>
-</div>
+<ul class="services-list">
+<li>
+<a class="service-link" onclick="showPanel('panel_s1')">Consulting &amp; Project Support</a>
+</li>
+<li>
+<a class="service-link" onclick="showPanel('panel_s2')">Data Research &amp; Compilation</a>
+</li>
+<li>
+<a class="service-link" onclick="showPanel('panel_s3')">Surveillance &amp; Monitoring</a>
+</li>
+<li>
+<a class="service-link" onclick="showPanel('panel_s4')">Proof of Efficacy, Risk Assessment &amp; Product Safety</a>
+</li>
+<li>
+<a class="service-link" onclick="showPanel('panel_s5')">Animal Studies &amp; Agricultural Field Trials</a>
+</li>
+<li>
+<a class="service-link" onclick="showPanel('panel_s6')">Contract Research &amp; Clinical Trials</a>
+</li>
+<li>
+<a class="service-link" onclick="showPanel('panel_s7')">Kurs “Datenanalyse mit Python”</a>
+</li>
+</ul>
 </div>
 <!-- Consulting & Project Support -->
 <div id="panel_s1" class="content-panel">
@@ -575,27 +575,21 @@ function showPanel(panelId) {
     panel.classList.remove('active');
   });
   
-  // Remove active class from all buttons
-  document.querySelectorAll('.service-card').forEach(button => {
-    button.classList.remove('active');
+  // Remove active class from all links
+  document.querySelectorAll('.service-link').forEach(link => {
+    link.classList.remove('active');
   });
   
   // Show selected panel
   document.getElementById(panelId).classList.add('active');
   
-  // Add active class to clicked button
+  // Add active class to clicked link
   event.currentTarget.classList.add('active');
 }
 
-// Initialize with first panel and button active
+// Initialize with first panel and link active
 showPanel('panel_s1');
-document.querySelector('.service-card').classList.add('active');
-
-// Keep the DOMContentLoaded event to ensure initialization if script loads late
-document.addEventListener('DOMContentLoaded', function() {
-  showPanel('panel_s1');
-  document.querySelector('.service-card').classList.add('active');
-});
+document.querySelector('.service-link').classList.add('active');
 </script>
 
 
