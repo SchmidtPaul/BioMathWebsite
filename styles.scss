@@ -47,7 +47,7 @@ h2 {
   border-radius: 50px;
   margin: 1rem auto;
   width: $grid-navbar-width;
-  box-shadow: 0 2px 4px $bm-darkgrey;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 // Remove background and shadow from inner navbar
@@ -254,56 +254,20 @@ background: $bm-midgrey;
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Grid container for all buttons */
-.services-grid-top, .services-grid-bottom {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  width: 100%;
-}
-
-/* Remove the separate bottom grid styling since we're using the same grid setup for both */
-.services-grid-bottom {
-  margin: 0;
-}
-
-.services-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 .services-grid-top {
   display: grid;
-  grid-template-columns: repeat(4, 220px);
+  grid-template-columns: repeat(auto-fit, 150px); /* Fixed width of 150px */
   gap: 20px;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-/* For screens that are too narrow for 4 columns */
-@media (max-width: 1000px) {
-  .services-grid-top {
-    grid-template-columns: repeat(auto-fit, 220px);
-  }
-}
-
-/* For mobile screens */
-@media (max-width: 500px) {
-  .services-grid-top {
-    grid-template-columns: 220px;
-  }
-}
-
 .service-card {
-  padding: 15px;
-  height: 130px;
-  width: 100%;
+  padding: 12px; /* Slightly reduced padding */
+  height: 100px;
+  width: 150px; /* Fixed width */
   outline: 0;
   border: 1px solid $bm-midgrey;
   cursor: pointer;
@@ -318,6 +282,8 @@ background: $bm-midgrey;
   touch-action: manipulation;
   transition: all 0.2s;
   color: $bm-midgrey;
+  font-size: 0.8rem; /* Smaller font size */
+  line-height: 1.1; /* Tighter line height */
 }
 
 .service-card:after {
