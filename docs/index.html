@@ -33,7 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -253,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><i class="fa-solid fa-envelope" aria-label="envelope"></i> central@biomath.de</p>
 <section id="our-publications" class="level2">
-<h2 class="anchored" data-anchor-id="our-publications">Our Publications</h2>
+<h2 data-anchor-id="our-publications">Our Publications</h2>
 <p>Below is a selection of publications from our past research and consulting collaborations. For a more complete list, see our <a href="./references.html">References</a>.</p>
 <div class="publication-gallery">
 <div class="publication-carousel">
@@ -266,7 +265,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="publication-details">
-<h3 class="publication-title anchored">
+<h3 class="publication-title">
 Understanding Modern Web Architecture
 </h3>
 <p class="publication-info">
@@ -292,7 +291,7 @@ Understanding Modern Web Architecture
 </div>
 </div>
 <div class="publication-details">
-<h3 class="publication-title anchored">
+<h3 class="publication-title">
 Advanced React Patterns
 </h3>
 <p class="publication-info">
@@ -318,7 +317,7 @@ Advanced React Patterns
 </div>
 </div>
 <div class="publication-details">
-<h3 class="publication-title anchored">
+<h3 class="publication-title">
 Machine Learning in Healthcare
 </h3>
 <p class="publication-info">
@@ -404,13 +403,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

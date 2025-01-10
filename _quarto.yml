@@ -48,4 +48,5 @@ website:
 format:
   html:
     theme: [cosmo, styles.scss]
+    anchor-sections: false
 
